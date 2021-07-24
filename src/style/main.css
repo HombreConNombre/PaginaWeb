@@ -109,6 +109,10 @@ nav a:visited{
 }
 .contenedor-central{
     margin: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    -webkit-box-shadow: 5px 5px 0px 0px #C8C8C8, 10px 10px 0px 0px #E0E0E0;
+    box-shadow: 5px 5px 0px 0px #C8C8C8, 10px 10px 0px 0px #E0E0E0;
 }
 /* EMPIEZA LA SECCIÓN RESPONSIVE DESIGN*/
 @media (min-width: 500px){
