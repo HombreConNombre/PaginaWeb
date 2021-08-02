@@ -1,14 +1,15 @@
 :root{
     --primario: #58D68D;
-    --secundario: #F1948A;
+    --secundario: #B03A2E;
     --blanco: #fff;
     --negro:#21212199;
-    --gris: #E5E8E8;
+    --gris: #636363;
 }
 
 html{
     font-size: 62,5%;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 }
 
 *,*::before,*::after{
@@ -79,15 +80,16 @@ nav a:visited{
 .contenido-superior h2,.contenido-superior p{
     color: var(--blanco);
 }
-.contenido-superior a{
+.boton{
     color: var(--blanco);
     background-color: var(--primario);
     text-decoration: none;
     font-weight: bold;
     padding:1rem;
     border-radius: .5rem;
+    border: none;
 }
-.contenido-superior a:hover{
+.boton:hover{
     color: var(--blanco);
     background-color: var(--secundario);
 }
@@ -104,18 +106,76 @@ nav a:visited{
     padding: 2rem;
 }
 .conocimientos{
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-}
-.contenedor-central{
+    display: flex;
+    flex-direction: column;
     margin: 1rem;
     padding: 1rem;
-    border-radius: 2rem;
-    -webkit-box-shadow: 5px 5px 0px 0px #C8C8C8, 10px 10px 0px 0px #E0E0E0;
-    box-shadow: 5px 5px 0px 0px #C8C8C8, 10px 10px 0px 0px #E0E0E0;
 }
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+.servicio p{
+    line-height: 1rem;
+}
+.servicio .iconoCuerpo{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--secundario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/**Formulario contacto**/
+.formulario{
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--gris);
+    width: min( 60rem, 100%);
+    display: auto;
+    margin: 0 auto;
+
+    align-items: center;
+}
+.formulario fieldset{
+    border: none;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+.campo{
+    margin-bottom: 1rem;
+}
+.campo label{
+    color: var(--primario);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.campo textarea{
+    width: 100%;
+}
+.campo input{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.boton[type="submit"] {
+    width: 90%;
+}
+
 /* EMPIEZA LA SECCIÓN RESPONSIVE DESIGN*/
-@media (min-width: 500px){
+@media (min-width: 600px){
     .nav-principal{
         flex-direction: row;
     }
@@ -123,4 +183,21 @@ nav a:visited{
         width: 25rem;
         margin: 0 auto;
     }   
+    .contenedor-central{
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .servicio .iconoCuerpo{
+        height: 10rem;
+        width: 10rem;
+        background-color: var(--secundario);
+        border-radius: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .conocimientos{
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
 }
