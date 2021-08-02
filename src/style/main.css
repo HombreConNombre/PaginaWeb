@@ -27,6 +27,7 @@ nav a{
     background-color: var(--principal);
     font-weight: bold;
     text-decoration: none;
+    color: var(--blanco);
 }
 
 .titulo{
