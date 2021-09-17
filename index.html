@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="src/style/normalize.css">
     <link rel="preload" href="src/style/main.css" as="style">
     <link rel="stylesheet" href="src/style/main.css">
-
+    <script src="src/JS/app.js" language="JavaScript" types="text/JavaScript"></script>
 </head>
 
 <body>
@@ -26,9 +26,7 @@
     <section class="seccion-superior">
         <div class="contenido-superior">
             <h2 class="titulo">Diseño y desarrollo</h2>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44"
-                viewBox="0 0 24 24" stroke-width="1.5" stroke="#F1C40F" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F1C40F" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <circle cx="12" cy="11" r="3" />
                 <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
@@ -38,14 +36,13 @@
         </div>
     </section>
     <main id="cuerpo">
-        <h2>Mis conocimientos</h2>
-        <div class="conocimientos">
-            <section class="servicio">
-                <h3>Aplicaciones móvil</h3>
-                <div class="iconoCuerpo">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-android"
-                        width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F1C40F" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
+        <section class="conocimientos">
+            <h2>Mis conocimientos</h2>
+            <div class="conocimientosDesglose">
+                <section class="servicio">
+                    <h3>Aplicaciones móvil</h3>
+                    <div class="iconoCuerpo">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-android" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F1C40F" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <line x1="4" y1="10" x2="4" y2="16" />
                         <line x1="20" y1="10" x2="20" y2="16" />
@@ -55,25 +52,19 @@
                         <line x1="9" y1="18" x2="9" y2="21" />
                         <line x1="15" y1="18" x2="15" y2="21" />
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-apple" width="44"
-                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F1C40F" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-apple" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F1C40F" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path
                             d="M9 7c-3 0 -4 3 -4 5.5c0 3 2 7.5 4 7.5c1.088 -.046 1.679 -.5 3 -.5c1.312 0 1.5 .5 3 .5s4 -3 4 -5c-.028 -.01 -2.472 -.403 -2.5 -3c-.019 -2.17 2.416 -2.954 2.5 -3c-1.023 -1.492 -2.951 -1.963 -3.5 -2c-1.433 -.111 -2.83 1 -3.5 1c-.68 0 -1.9 -1 -3 -1z" />
                         <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" />
                     </svg>
-                </div>
-                <p>Desarrollo de aplicaciones en Android y en iOS, tanto aplicaciones nativas como multiplataformas. En
-                    un futuro, colocaré en la página <a href="ejemplos.html">EJEMPLOS</a> las aplicaciones para poder
-                    ver ejemplos.</p>
-            </section>
-            <section class="servicio">
-                <h3>Aplicaciones Web</h3>
-                <div class="iconoCuerpo">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-chrome" width="44"
-                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F1C40F" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
+                    </div>
+                    <p>Desarrollo de aplicaciones en Android y en iOS, tanto aplicaciones nativas como multiplataformas. En un futuro, colocaré en la página <a href="ejemplos.html">EJEMPLOS</a> las aplicaciones para poder ver ejemplos.</p>
+                </section>
+                <section class="servicio">
+                    <h3>Aplicaciones Web</h3>
+                    <div class="iconoCuerpo">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-chrome" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F1C40F" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <circle cx="12" cy="12" r="9" />
                         <circle cx="12" cy="12" r="3" />
@@ -81,18 +72,14 @@
                         <line x1="12" y1="9" x2="20.4" y2="9" transform="rotate(120 12 12)" />
                         <line x1="12" y1="9" x2="20.4" y2="9" transform="rotate(240 12 12)" />
                     </svg>
-                </div>
-                <p>Creación de páginas web adaptativas y ligeras. En un futuro, habrá una página web con <a
-                        href="ejemplos.html">EJEMPLOS</a> de
-                    trabajos que haya realizado.
-                </p>
-            </section>
-            <section class="servicio">
-                <h3>Desarrollo de software</h3>
-                <div class="iconoCuerpo">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices-pc" width="44"
-                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F1C40F" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
+                    </div>
+                    <p>Creación de páginas web adaptativas y ligeras. En un futuro, habrá una página web con <a href="ejemplos.html">EJEMPLOS</a> de trabajos que haya realizado.
+                    </p>
+                </section>
+                <section class="servicio">
+                    <h3>Desarrollo de software</h3>
+                    <div class="iconoCuerpo">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices-pc" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F1C40F" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M3 5h6v14h-6z" />
                         <path d="M12 9h10v7h-10z" />
@@ -101,13 +88,12 @@
                         <path d="M6 13v.01" />
                         <path d="M6 16v.01" />
                     </svg>
-                </div>
-                <p>Desarrollo de aplicaciones de escritorio en C#, Python y Java. Además, gestión de bases de datos SQL.
-                    En un futuro, en la página de <a href="ejemplos.html">EJEMPLOS</a> mostraré algunos de mis trabajos
-                    realizados. </p>
-            </section>
-        </div>
-        <section>
+                    </div>
+                    <p>Desarrollo de aplicaciones de escritorio en C#, Python y Java. Además, gestión de bases de datos SQL. En un futuro, en la página de <a href="ejemplos.html">EJEMPLOS</a> mostraré algunos de mis trabajos realizados. </p>
+                </section>
+            </div>
+        </section>
+        <section class="seccionFormulario">
             <h2>Contactar</h2>
             <form action="" class="formulario">
                 <fieldset>
@@ -127,14 +113,12 @@
                         </div>
                         <div class="campo">
                             <label for="">Mensaje:</label>
-                            <textarea name="" id="" cols="30" rows="10"
-                                placeholder="¿Qué te gustaría decirme?"></textarea>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="¿Qué te gustaría decirme?"></textarea>
                         </div>
-
-                        <input type="submit" class="boton" name="" id="">
-
+                        <input type="submit" class="boton" name="" id="" onclick="responderFormulario();">
                     </div>
                 </fieldset>
+
             </form>
         </section>
 
@@ -142,6 +126,7 @@
     <footer>
         <p>Todos los derechos reservados. Iñigo Martínez</p>
     </footer>
+    <script src="src/js/app.js"></script>
 </body>
 
 </html>
