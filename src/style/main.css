@@ -1,246 +1,261 @@
-      :root {
-         --primario: #58D68D;
-         --secundario: #B03A2E;
-         --blanco: #fff;
-         --negro: #000;
-         --negroAlpha: #21212199;
-         --gris: #636363;
-     }
-     
-     html {
-         font-size: 62, 5%;
-         box-sizing: border-box;
-         scroll-snap-type: y mandatory;
-     }
-     
-     *,
-     *::before,
-     *::after {
-         box-sizing: inherit;
-     }
-     
-     body {
-         font-size: 16px;
-         font-family: Arial, Helvetica, sans-serif;
-         background-image: linear-gradient(to top, var(--gris) 0%, var(--blanco));
-     }
-     /* PARTE SUPERIOR DEL HTML*/
-     
-     nav a {
-         padding: 1rem;
-         background-color: var(--principal);
-         font-weight: bold;
-         text-decoration: none;
-         color: var(--blanco);
-     }
-     
-     p a {
-         color: var(--negro);
-     }
-     
-     p a :visited {
-         color: var(--negro);
-     }
-     
-     .titulo {
-         font-size: 4rem;
-         text-align: center;
-         color: var(--secundario);
-     }
-     
-     .titulo span {
-         font-size: 2rem;
-         font-style: italic;
-     }
-     
-     .contenedor {
-         width: auto;
-         margin: 0 auto;
-     }
-     
-     .bg-contenedor {
-         background-color: var(--primario);
-     }
-     
-     .nav-principal {
-         background-color: var(--primario);
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-     }
-     
-     nav a:hover {
-         background-color: var(--secundario);
-     }
-     
-     nav a:visited {
-         color: var(--blanco)
-     }
-     
-     .seccion-superior {
-         background-image: url(../img/fondo.jpg);
-         background-repeat: no-repeat;
-         background-size: cover;
-         height: 450px;
-         position: relative;
-     }
-     
-     .contenido-superior {
-         position: absolute;
-         width: 100%;
-         height: 100%;
-         background-color: var(--negroAlpha);
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-     }
-     
-     .contenido-superior h2,
-     .contenido-superior p {
-         color: var(--blanco);
-     }
-     
-     .boton {
-         color: var(--blanco);
-         background-color: var(--primario);
-         text-decoration: none;
-         font-weight: bold;
-         padding: 1rem;
-         border-radius: .5rem;
-         border: none;
-     }
-     
-     .boton:hover {
-         color: var(--blanco);
-         background-color: var(--secundario);
-     }
-     /* PARTE CENTRALES*/
-     
-     #cuerpo {
-         background-color: var(--blanco);
-         border-radius: .3rem;
-         -webkit-box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.73);
-         /* CÓDIGO DE: BOX GENERATOR */
-         box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.73);
-         position: relative;
-         width: auto;
-         margin: 0 auto;
-         text-align: center;
-     }
-     
-     .conocimientos {
-         display: flex;
-         flex-direction: column;
-         margin: 1rem;
-         padding: 1rem;
-     }
-     
-     .servicio {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         margin: 1rem;
-         padding: 1rem;
-     }
-     
-     .servicio p {
-         line-height: 1rem;
-     }
-     
-     .servicio .iconoCuerpo {
-         height: 15rem;
-         width: 15rem;
-         background-color: var(--secundario);
-         border-radius: 50%;
-         display: flex;
-         justify-content: space-evenly;
-         align-items: center;
-     }
-     /**Formulario contacto**/
-     
-     .seccionFormulario {
-         padding: 1.5rem;
-     }
-     
-     .formulario {
-         padding: 2rem;
-         border-radius: 1rem;
-         background-color: var(--gris);
-         width: min( 60rem, 100%);
-         display: auto;
-         margin: 0 auto;
-         align-items: center;
-     }
-     
-     .formulario fieldset {
-         border: none;
-     }
-     
-     .formulario legend {
-         text-align: center;
-         font-size: 2rem;
-         text-transform: uppercase;
-         font-weight: 700;
-         margin-bottom: 2rem;
-         color: var(--primario);
-     }
-     
-     .campo {
-         margin-bottom: 1rem;
-     }
-     
-     .campo label {
-         color: var(--primario);
-         font-weight: bold;
-         margin-bottom: .5rem;
-         display: block;
-     }
-     
-     .campo textarea {
-         width: 100%;
-     }
-     
-     .campo input {
-         width: 100%;
-         border: none;
-         padding: 1.5rem;
-         border-radius: .5rem;
-     }
-     
-     .boton[type="submit"] {
-         width: 90%;
-     }
-     /* EMPIEZA LA SECCIÓN RESPONSIVE DESIGN*/
-     
-     @media (min-width: 600px) {
-         .nav-principal {
-             flex-direction: row;
-         }
-         .contenedor {
-             width: 25rem;
-             margin: 0 auto;
-         }
-         .contenedor-central {
-             margin: 1rem;
-             padding: 1rem;
-         }
-         .servicio .iconoCuerpo {
-             height: 10rem;
-             width: 10rem;
-             background-color: var(--secundario);
-             border-radius: 50%;
-             display: flex;
-             justify-content: space-evenly;
-             align-items: center;
-         }
-         .conocimientosDesglose {
-             display: grid;
-             grid-template-columns: repeat(3, 1fr);
-         }
-         .conocimientos {
-             background-color: var(--primario);
-             margin: 0;
-             padding-top: 1rem;
-         }
-     }
+             :root {
+                --primario: #58D68D;
+                --secundario: #B03A2E;
+                --verde: #27FF00;
+                --rojo: #FF0000;
+                --blanco: #fff;
+                --negro: #000;
+                --negroAlpha: #21212199;
+                --gris: #636363;
+            }
+            
+            html {
+                font-size: 62, 5%;
+                box-sizing: border-box;
+                scroll-snap-type: y mandatory;
+            }
+            
+            *,
+            *::before,
+            *::after {
+                box-sizing: inherit;
+            }
+            
+            body {
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: linear-gradient(to top, var(--gris) 0%, var(--blanco));
+            }
+            /* PARTE SUPERIOR DEL HTML*/
+            
+            nav a {
+                padding: 1rem;
+                background-color: var(--principal);
+                font-weight: bold;
+                text-decoration: none;
+                color: var(--blanco);
+            }
+            
+            p a {
+                color: var(--negro);
+            }
+            
+            p a :visited {
+                color: var(--negro);
+            }
+            
+            .titulo {
+                font-size: 4rem;
+                text-align: center;
+                color: var(--secundario);
+            }
+            
+            .titulo span {
+                font-size: 2rem;
+                font-style: italic;
+            }
+            
+            .contenedor {
+                width: auto;
+                margin: 0 auto;
+            }
+            
+            .bg-contenedor {
+                background-color: var(--primario);
+            }
+            
+            .nav-principal {
+                background-color: var(--primario);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            
+            nav a:hover {
+                background-color: var(--secundario);
+            }
+            
+            nav a:visited {
+                color: var(--blanco)
+            }
+            
+            .seccion-superior {
+                background-image: url(../img/fondo.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 450px;
+                position: relative;
+            }
+            
+            .contenido-superior {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: var(--negroAlpha);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .contenido-superior h2,
+            .contenido-superior p {
+                color: var(--blanco);
+            }
+            
+            .boton {
+                color: var(--blanco);
+                background-color: var(--primario);
+                text-decoration: none;
+                font-weight: bold;
+                padding: 1rem;
+                border-radius: .5rem;
+                border: none;
+            }
+            
+            .boton:hover {
+                color: var(--blanco);
+                background-color: var(--secundario);
+            }
+            /* PARTE CENTRALES*/
+            
+            #cuerpo {
+                background-color: var(--blanco);
+                border-radius: .3rem;
+                -webkit-box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.73);
+                /* CÓDIGO DE: BOX GENERATOR */
+                box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.73);
+                position: relative;
+                width: auto;
+                margin: 0 auto;
+                text-align: center;
+            }
+            
+            .conocimientos {
+                display: flex;
+                flex-direction: column;
+                margin: 1rem;
+                padding: 1rem;
+            }
+            
+            .servicio {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 1rem;
+                padding: 1rem;
+            }
+            
+            .servicio p {
+                line-height: 1rem;
+            }
+            
+            .servicio .iconoCuerpo {
+                height: 15rem;
+                width: 15rem;
+                background-color: var(--secundario);
+                border-radius: 50%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            /**Formulario contacto**/
+            
+            .seccionFormulario {
+                padding: 1.5rem;
+            }
+            
+            .formulario {
+                padding: 2rem;
+                border-radius: 1rem;
+                background-color: var(--gris);
+                width: min( 60rem, 100%);
+                display: auto;
+                margin: 0 auto;
+                align-items: center;
+            }
+            
+            .formulario fieldset {
+                border: none;
+            }
+            
+            .formulario legend {
+                text-align: center;
+                font-size: 2rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-bottom: 2rem;
+                color: var(--primario);
+            }
+            
+            .campo {
+                margin-bottom: 1rem;
+            }
+            
+            .campo label {
+                color: var(--primario);
+                font-weight: bold;
+                margin-bottom: .5rem;
+                display: block;
+            }
+            
+            .campo textarea {
+                border-radius: 1rem;
+                width: 100%;
+            }
+            
+            .campo input {
+                width: 100%;
+                border: none;
+                padding: 1.5rem;
+                border-radius: .5rem;
+            }
+            
+            .boton[type="submit"] {
+                width: 90%;
+            }
+            
+            .error {
+                color: var(--blanco);
+                padding: 2rem;
+                border-radius: 1rem;
+                font-weight: bolder;
+                background-color: var(--rojo);
+            }
+            
+            .correcto {
+                background-color: var(--verde);
+            }
+            /* EMPIEZA LA SECCIÓN RESPONSIVE DESIGN*/
+            
+            @media (min-width: 600px) {
+                .nav-principal {
+                    flex-direction: row;
+                }
+                .contenedor {
+                    width: 25rem;
+                    margin: 0 auto;
+                }
+                .contenedor-central {
+                    margin: 1rem;
+                    padding: 1rem;
+                }
+                .servicio .iconoCuerpo {
+                    height: 10rem;
+                    width: 10rem;
+                    background-color: var(--secundario);
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+                .conocimientosDesglose {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                }
+                .conocimientos {
+                    background-color: var(--primario);
+                    margin: 0;
+                    padding-top: 1rem;
+                }
+            }
