@@ -5,8 +5,8 @@ const datosFormulario = {
     mensaje: ""
 }
 
-const nombre = document.querySelector('#nombre');
-const telefono = document.querySelector('#telefono');
+const nombre = document.querySelector("#nombre");
+const telefono = document.querySelector("#telefono");
 const email = document.querySelector('#email');
 const mensaje = document.querySelector('#mensaje');
 const formulario = document.querySelector('.formulario');
